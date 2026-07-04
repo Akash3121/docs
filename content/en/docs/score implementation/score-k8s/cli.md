@@ -129,6 +129,14 @@ score-k8s generate [flags]
 
 The `generate` command can be combined with the following flags:
 
+### `--format`
+
+Specifies the output format for the manifests: `yaml` or `kyaml`. By default, the output format is `yaml`.
+
+```bash
+score-k8s generate --format kyaml
+```
+
 ### `--generate-namespace`
 
 Specifies optionally if a `Namespace` resource should be generated in the manifests. Requires `--namespace` to be set.
